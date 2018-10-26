@@ -30,9 +30,9 @@ public class OrmDemo {
             LOG.debug("Debug message!");
             // Serializable ivan = session.save(Employee.of("testing2", "0000", Gender.MALE));
             session.save(Employee.builder()
-                            .name("te22st5")
-                            .age("192003")
-                            .gender(Gender.FEMALE).build()); // .build() - забыл
+                            .name("GitHubTest")
+                            .age("3456789")
+                            .gender(Gender.MALE).build()); // .build() - забыл
             session.getTransaction().commit();
             LOG.info("Log Info Message!!!");
         }catch (Throwable e){
